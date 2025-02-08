@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Sidebar for chat history -->
+      <aside class="chat-sidebar">
+        <h2>Chat History</h2>
+        <ul id="chatHistory"></ul>
+      </aside>
+
+      <!-- Main chat interface -->
+      <main class="chat-main">
+        <header class="chat-header">
+          <h1>ChatGPT Clone</h1>
+          <button id="clearHistory">Clear History</button>
+        </header>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="message ai-message">
+            <div class="avatar">🤖</div>
+            <div class="message-content">
+              Hello! How can I assist you today?
+            </div>
+            <span class="timestamp"></span>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <form id="chatForm">
+            <textarea
+              id="userInput"
+              placeholder="Send a message..."
+              rows="1"
+            ></textarea>
+            <button type="submit" id="sendButton">
+              <img src="send-icon.png" alt="Send" />
+            </button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
